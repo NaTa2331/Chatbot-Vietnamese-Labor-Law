@@ -1,0 +1,8 @@
+streamlit
+pickle
+faiss
+numpy
+groq
+google.generativeai
+sentence_transformers
+transformers
