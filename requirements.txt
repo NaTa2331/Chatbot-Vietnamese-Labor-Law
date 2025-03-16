@@ -1,8 +1,5 @@
 streamlit
-pickle
-faiss
-numpy
+faiss-cpu
+sentence-transformers
 groq
-google.generativeai
-sentence_transformers
-transformers
+google-generativeai
