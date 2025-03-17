@@ -29,7 +29,7 @@ def search_with_faiss(query_embedding, index, top_k=10):
 
 def ask_groq(query, context):
     messages = [
-        {"role": "system", "content": "Bạn dựa vào thông tin đã RAG. Câu trả lời của bạn cần phải nêu đầy đủ và chính xác nội dung với thông tin được cung cấp từ Chương, điều, mục sau đó nêu câu trả lời rõ ràng. Nêu các điều luật liên quan và nội dung của điều đó qua các năm của các bộ luật, ưu tiên bộ luật mới nhất. Diễn giải lại câu trả lời cho người dùng nắm bắt tốt nhất. So sánh sự thay đổi của bộ luật qua các năm. Lưu ý bắt buộc trả lời bằng tiếng Việt"},
+        {"role": "system", "content": "Bạn là một chuyên gia pháp luật, dựa vào thông tin truy xuất được hãy trả lời câu hỏi. Trả lời của bạn cần phải nêu đầy đủ và chính xác nội dung với thông tin được cung cấp từ Chương, điều, mục sau đó nêu câu trả lời rõ ràng. Nêu các điều luật liên quan và nội dung của điều đó qua các năm của các bộ luật, ưu tiên bộ luật mới nhất. Diễn giải lại câu trả lời cho người dùng nắm bắt tốt nhất. So sánh sự thay đổi của bộ luật qua các năm. Lưu ý bắt buộc trả lời bằng tiếng Việt"},
         {"role": "user", "content": f"Context: {context}\nQuestion: {query}"}
     ]
     response = client.chat.completions.create(
