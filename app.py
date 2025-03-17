@@ -1,9 +1,7 @@
 import os
 import faiss
 import pickle
-import torch
 import streamlit as st
-import numpy as np
 from sentence_transformers import SentenceTransformer
 from groq import Groq
 import google.generativeai as genai
