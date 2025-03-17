@@ -14,7 +14,7 @@ client = Groq(api_key='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'
 genai.configure(api_key="AIzaSyApnSpZVliqfTKmhfEOu66kczAbsvyPslQ")
 
 # Load embedding model
-embedding_model = SentenceTransformer('./saved_Embedding_model')
+embedding_model = SentenceTransformer('intfloat/multilingual-e5-large')
 
 faiss_directory = "faiss"
 faiss_index_file = os.path.join(faiss_directory, "faiss_index.index")
