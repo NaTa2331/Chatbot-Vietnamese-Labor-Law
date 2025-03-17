@@ -11,7 +11,7 @@ import google.generativeai as genai
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 client = Groq(api_key='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')
-genai.configure(api_key="AIzaSyAZt_jcRAviU7um0EUiegKFu6UouAPFNc0")
+genai.configure(api_key="AIzaSyApnSpZVliqfTKmhfEOu66kczAbsvyPslQ")
 
 # Load embedding model
 embedding_model = SentenceTransformer('./saved_Embedding_model')
